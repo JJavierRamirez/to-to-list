@@ -8,16 +8,9 @@ export const TaskItem = ( { task } ) => {
         setIsDone(!isDone);
     };
 
-    if(!isDone){
-        return(
-            <>
-                <p id={task} onClick={ event => changeFormat(event) }>{task}</p>
-            </>
-        )
-    }
     return(
         <>
-            <p className="line"  id={task} onClick={ event => changeFormat(event) }>{task}</p>
+            <p id={task} className={isDone ? 'itemDone': 'itemUndone'} onClick={ event => changeFormat(event) }>{task}</p>
         </>
     )
 

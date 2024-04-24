@@ -69,3 +69,12 @@
   .card img {
     width: 100%;
   }
+
+  .itemDone {
+    cursor: pointer;
+    text-decoration: line-through;
+  }
+
+  .itemUndone{
+    cursor: pointer;
+  }
